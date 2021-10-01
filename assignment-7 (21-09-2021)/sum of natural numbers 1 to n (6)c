@@ -1,0 +1,17 @@
+// 6)write c program for find sum of all natural numbers between 1 to n?
+
+
+#include<stdio.h>
+int main()
+{
+    int x,y=0,z=0;
+    scanf("%d",&x);
+    while(x)
+    {
+	y++;
+	z=z+y;
+	if(y>=x)
+	    break;
+    }
+    printf("Sum of all natural numbers is :%d\n",z);
+}
