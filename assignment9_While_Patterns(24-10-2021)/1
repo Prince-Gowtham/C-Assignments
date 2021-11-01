@@ -1,0 +1,28 @@
+//34)write a c program for a given number pattern .....?
+
+
+#include<stdio.h>
+int main()
+{
+    int x=1,y=9,z=1;
+    while(x<=5)
+    {
+	while(z<=y)
+	{
+	    if(z%2==1)
+	    {
+		printf("%d",z);
+		z++;
+	    }
+	    else 
+		z++;
+	}
+	printf("\n");
+	x++;
+	z=x+1;
+	if(z==5)
+	    z=z+2;
+	else if(z==7)
+	    z=z+2;
+    }
+}
